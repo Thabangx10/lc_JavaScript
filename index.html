@@ -10,12 +10,16 @@
 
 <style>
 
-    h1{
-        margin-left: 35%;
+    h2{
+        text-align: center;
     }
 
-    #h1{
+    #Th{
       text-align: center;
+    }
+
+    #carouselExampleDark{
+      object-fit: cover;
     }
 
 
@@ -32,18 +36,69 @@
         </div>
       </nav>
 
-      <h1><strong>
-        PRACTICE
-      </strong></h1>
-      <h2 id="Th">
-        hi
-      </h2>
+      <h1 id="Th">
+        hey
+      </h1>
       <br><br>
+      <h2><strong>
+        PRACTICE
+      </strong></h2>
+      <br><br><br><br><br><br><br>
 
-      <!-- // We are going to create <p> that will hold a id // -->
-        <p id="fullName"></p>
+      <!-- This code was derived from two sources -->
+      
+      <!-- Primary Source :  https://getbootstrap.com/docs/5.0/components/carousel/-->
+      
+      <!-- Secondary Source : https://www.w3schools.com/bootstrap5/bootstrap_carousel.php -->
 
+      <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/Data_types.png" alt="Data types" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/Objects_Arrays.png" alt="Objects and Arrays" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/Operators.jpg" alt="Operators" class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<br><br><br><br><br><br>
+
+<main>
+  <a href="">DATA TYPES</a><br><br>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur aut explicabo hic nihil necessitatibus. Ea, itaque eveniet. Quo delectus, eos repellendus accusamus tenetur unde fuga ducimus molestias libero! Voluptatibus.
+  </p>
+  <a href="">OBJECTS AND ARRAYS</a><br><br><br><br>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quia aut suscipit quaerat voluptas quis voluptates obcaecati, et corporis itaque quod. Repellendus qui at magnam reiciendis eligendi perspiciatis, aut earum?
+  </p>
+
+  <a href="">OPERATORS</a><br><br>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, est! Illo fugiat possimus, ullam velit corporis dolorum natus pariatur architecto obcaecati. Possimus consequatur cum, numquam accusantium porro natus omnis rem?
+  </p>
+</main>
     <script src="./script/home.js"></script>
 
 

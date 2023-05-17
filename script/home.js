@@ -19,6 +19,6 @@ console.log(numberVar * 5);
 // "Const" var
 
 // const name = 'thabang'
-// const name = 'Kganana'
+// name = 'Kganana'
 
 // -> We get an error due to us redaclring the same variable more than once (a blocked scoped variable)
