@@ -29,4 +29,3 @@ console.log(persons[2]);
 
 
 
-
