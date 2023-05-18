@@ -22,3 +22,5 @@ console.log(numberVar * 5);
 // const name = 'Kganana'
 
 // -> We get an error due to us redaclring the same variable more than once (a blocked scoped variable)
+
+
