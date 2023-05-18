@@ -25,3 +25,16 @@ function sum(number1, number2) {
 }
 
 sum(20, 5)
+
+// Here we declare a function called square() which takes in a parameter number.
+// To calculate the square of the number, we multiply number by number.
+// Then we return this value to whoever called this value using the return keyword.
+
+
+function tableOfFive(digit) {
+    return digit * 5
+}
+
+tableOfFive(5)
+let digit = tableOfFive(5)
+console.log(digit);
