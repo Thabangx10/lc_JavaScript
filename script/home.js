@@ -7,7 +7,7 @@ console.log(fullName);
 
 // Updating the content in our <p></p>, using its id.
 
-document.getElementById('h1').innerHTML = fullName;
+document.getElementById('Th').innerHTML = fullName;
 // console.log();
 
 
@@ -19,7 +19,7 @@ console.log(numberVar * 5);
 // "Const" var
 
 // const name = 'thabang'
-// const name = 'Kganana'
+// name = 'Kganana'
 
 // -> We get an error due to us redaclring the same variable more than once (a blocked scoped variable)
 
