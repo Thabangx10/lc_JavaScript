@@ -38,3 +38,35 @@ function tableOfFive(digit) {
 tableOfFive(5)
 let digit = tableOfFive(5)
 console.log(digit);
+
+// Can you create a function as stated below?
+
+let displayName = (firstName)=> {
+
+     document.write(firstName);
+
+};
+
+// displayName ('Joel');
+
+// keyword -> let;
+// displayName -> is the function name we could call to display the function
+// firstname -> will be used as a parameter for our function
+// Function : =>
+
+// Objects
+
+let dictionary = {
+    person1 : 'Mongigazi'
+}
+let needs1 = [23, 'thabang']
+
+needs1.push(dictionary.person1)
+console.log(needs1);
+
+
+
+
+
+
+
