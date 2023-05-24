@@ -1,0 +1,6 @@
+[submodule "JS_workshop/jsDayTwo"]
+	path = JS_workshop/jsDayTwo
+	url = https://github.com/Thabangx10/jsDayTwo
+[submodule "PorftfolioBSandJS"]
+	path = PorftfolioBSandJS
+	url = https://github.com/Thabangx10/PorftfolioBSandJS
