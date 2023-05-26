@@ -37,3 +37,5 @@ let home = {
 }
 
 console.log(home.Address, home.streetNumber, home.suburb, home.city, home.country);
+
+
