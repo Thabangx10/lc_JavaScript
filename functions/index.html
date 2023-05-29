@@ -15,16 +15,16 @@
         text-align: center;
     }
 
-    .background{
+    #form{
         background-color: blueviolet;
         width: 50%;
-        inset: 0;
+        height: 100%;
         margin: auto;
     }
 
-    strong{
+    /*strong{
         margin: 2%;
-    }
+    } */
 </style>
 <body>
     <h1><strong>HTML & Javascript  function task</strong></h1>
@@ -36,7 +36,7 @@
     </h3>
     <br>
     <main>
-        <table>
+        <!-- <table>
         <div class="background">
 
             <strong id="numb1"> Number of ice-creams =  </strong><br> 
@@ -46,13 +46,29 @@
 
             <br>
             <strong id="output"> Total price of ice-creams = </strong><br>
+            <input type="text">
             <br>
             <button type="submit" id="output">Calculate Price</button>
         </div>
-        </table>
+        </table> -->
+
+        <form id="form">
+            <label for="ice_creams">Number of ice-creams = </label>
+            <input type="number" id="numb1" required>
+
+            <label for="cost">Cost/ice-creams = </label>
+            <input type="number" id="cost">
+
+            <label for="Total" id="total">Total = </label>
+            <input type="number" id="total1">
+
+        <div class="class">
+            <button type="button" onclick="calculate()">Display</button>
+        </div>
+        </form>
     </main>
     
 
     <script src="./script/code.js"></script>
 </body>
-</html>
+</html> 
