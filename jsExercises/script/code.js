@@ -86,3 +86,52 @@ function clearForm() {
     document.getElementById("operator").selectedIndex = 0;
     document.getElementById("result").textContent = "";
 }
+
+// new execerise
+
+
+// To return random characters in a string
+
+let subject1 = "programming";
+//  function called random which will take in the parameter of 'length'
+
+function random(length) {
+    
+    // Set counter to an empty string 
+    let result = '';
+
+    // Create a variable to collect the elements within the strings length
+    let subjectlength = subject1.length;
+
+    // creating a range function to collect our values from the variable 'subject' and generate our desired output into 'result'
+    for (let i = 0; i < length; i++) {
+        result += subject1.charAt(Math.floor(Math.random() * subjectlength));
+        
+    }
+
+    return result;
+}
+console.log(random(10));
+
+
+// We are now going to implement logic that will allow us to reverse the the variable
+
+let subject = "programming";
+
+// lets create a function to implement our logic to solve the problem of reversing the string
+
+function reverse(subject) {
+    
+    // Set counter to empty string
+    let newsubject = "";
+
+    // range function to collect elements within our value from the last value using . length -1
+
+    for (let i = subject.length -1 ; i >= 0; i--){
+        newsubject += subject[i];
+    }
+    return newsubject;
+}
+
+let result = reverse(subject);
+console.log(result);
