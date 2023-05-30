@@ -135,3 +135,23 @@ function reverse(subject) {
 
 let result = reverse(subject);
 console.log(result);
+
+// We are getting the current date
+
+let currentDate = new Date(2023,05, 29);
+
+// We are initializing the peeps objects into the array
+let peeps =[
+    {
+        firstname: "Thabang",
+        DOB: new Date(2023, 5, 31)
+    },
+];
+
+// We are looking at the key value pair in our array which holds the value "Thabang"
+
+let x = peeps.find(persons => peeps.firstname === "Thabang");
+let myDOB = x.DOB;
+
+// Calucalating , we are going to calculate the current date, which has been declared with my D.O.B
+
