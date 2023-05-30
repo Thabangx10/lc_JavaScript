@@ -66,6 +66,14 @@ console.log(needs1);
 
 
 
+// Additional Tasks
+
+let numb1 = parseInt(document.getElementById('numb1').value);
+let cost = parseInt(document.getElementById('cost').value);
+// let total = 
+
+
+
 
 
 
