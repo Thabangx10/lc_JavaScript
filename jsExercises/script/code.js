@@ -151,7 +151,42 @@ let peeps =[
 // We are looking at the key value pair in our array which holds the value "Thabang"
 
 let x = peeps.find(persons => peeps.firstname === "Thabang");
-let myDOB = x.DOB;
+// let myDOB = x.DOB;
 
 // Calucalating , we are going to calculate the current date, which has been declared with my D.O.B
 
+
+// 31 May 2023
+
+// we going to create a variable to target our element I.D
+let table = document.getElementById('body');
+
+// We are now going to create an array of objects that will hold our desired values
+
+let details = [
+    {
+        ID: '1',
+        Name: 'idk',
+        Price: 'R 2 million',
+        Image: 'https://i.postimg.cc/3x7byKMp/image.png'
+    }
+];
+
+details.forEach(detail => {
+    table.innerHTML += `
+    <tr>
+    <th>${detail.Name}</th>
+    <th>${detail.Price}</th>
+    <th><img src="${detail.Image}" alt="${detail.ID}"></th>
+    
+    <th>
+    <button>ADD</button>
+    </th>
+
+    <th>
+    <button>DELETE</button>
+    </th>
+    </tr>
+
+    `
+});  

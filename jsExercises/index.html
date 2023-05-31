@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Exercises</title>
 </head>
+<style>
+
+  table{
+    margin: auto ;
+  }
+  img{
+    width: 50%;
+    height: 50%;
+  }
+</style>
 <body>
     <!-- Description -->
     <p>
@@ -85,7 +97,42 @@
         </div>
       </div>
     </section>
-    
+    <br><br><br>
+    <h3>
+      31 of May, 2023
+    </h3>
+    <section>
+      <p>
+        Create a table with the following headings:
+        <ul>
+          <ul>Name, Price, Img, Add Button, Delete Button</ul><br>
+          <ul>Append element to the td tags through js.</ul><br>
+          <ul>Give the element unique IDs and create an array containing the name, price and img.</ul><br>
+        </ul>
+      </p>
+    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Image</th>
+          <th>Total</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="body">
+        <!-- We are going to add our dynamically added content here by targeting the elements I.D -->
+      </tbody>
+    </table>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+
+
     <script src="./script/code.js"></script>
+
 </body>
 </html>
