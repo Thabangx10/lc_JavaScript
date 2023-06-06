@@ -73,6 +73,95 @@ let cost = parseInt(document.getElementById('cost').value);
 // let total = 
 
 
+// More practice 
+
+// The normal function that accepts arguments:
+function divide(num1, num2) {
+    result = num1 / num2 
+    console.log(result);
+    // if (num1 == 0 || num2 == 0) {
+    //      console.log("You cannot divide by ZERO!");
+    // }else{
+    //     console.log(divide(100, 50));
+    // }
+    // try {
+    //     console.log(divide(100,5));
+    // } catch (error) {
+    //     console.log(error.message);
+    // }
+
+
+};
+divide(100,5);
+
+// Then an arrow function that outputs the correct output needed but structured differently
+
+let divide2 = (num1, num2) => {
+    result = num1 / num2
+    console.log(result);
+};
+divide2(100,10);
+
+// Lets create an object with multiple keys
+
+let myDetails = {
+    fullName: 'Thabang Kganana',
+    age: 24,
+    Description: 'He is a persistenent ididvidual, looking for strategically upskilling enviroments'
+};
+
+console.log(myDetails);
+console.log(myDetails.fullName, myDetails.Description, myDetails.age);
+console.log(myDetails['age']);
+console.log(Object.keys(myDetails));
+console.log(Object.values(myDetails));
+let sources = ['I am willing to explore various other avenues within software engineering']
+
+// let newStr = Object.assign(sources.push() , myDetails.Description )
+// console.log();
+
+sources.push(myDetails.Description)
+console.log(sources);
+
+// console.log(myDetails['subject']);
+
+myDetails.Education = ["Web and Software development", "Sofware Engineering"];
+console.log("Updated :" , myDetails);
+
+// Arrow function to access the keys of an object
+debugger
+let City = {
+    Name: "Mine",
+    Situated: "Covukiland",
+    Founded: "Through blood",
+    Description: function() {
+        return this.Name.concat(" is situated in, ", this.Situated)
+    }
+}
+
+Object.values(City).forEach(point => {
+    console.log(point);
+});
+
+// Using the propertyfunction in the 'KEY'-> DESCRIPTION to concatinate both the 'NAME + SITUATED)
+
+console.log(City.Description());
+
+// Another object excercise
+
+let details = {
+    firstName: 'Thabang',
+    lastName: 'Kganana',
+    age: 24,
+    old: function () {
+        return this.age < 15 ? 'YOU are old enough' : 'to young'
+    }
+};
+
+console.log(details.old());
+
+
+
 
 
 
