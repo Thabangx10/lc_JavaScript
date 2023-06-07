@@ -79,3 +79,67 @@ async function getAPI() {
 }
 
 console.log(getAPI());
+
+// try{
+//     fetch('https://api.publicapis.org/entries').then(response => response.json()).then(data=>{console.log(data);})
+// }
+// catch (err){
+//     console.log(err);
+// }
+
+//  DATE -> 07 JUNE 2023, WEDNESDAY
+
+// Create an array of Objects (At least 3 Objects). Each object should have a URL Link to an image.
+
+
+let products = [
+    {
+        productID: 01,
+        productName: 'Manchester United Mens shirt',
+        productPrice: 2000,
+        images: document.createElement("img").src="https://i.postimg.cc/2ypSdcxF/download-1.jpg",
+    
+        // productDescription: '',
+    },
+
+    {
+        productID: 02,
+        productName: 'Barcelona Mens shirt',
+        productPrice: 1800,
+        // productDescription: '',
+    },
+
+    {
+        productID: 03,
+        productName: 'Chelsea Mens Football Club shirt',
+        productPrice: 1500,
+        productDescription: 'https://i.postimg.cc/2ypSdcxF/download-1.jpg',
+    }
+]
+
+
+// Set your array in localStorage.
+
+let Details = localStorage.setItem('Products', JSON.stringify(products));
+console.log(Details);
+
+// Get your array from localStorage and store it in a variable called "Information"
+
+// JSON.parse(localStorage.getItem('Products'))
+
+console.log(JSON.parse(localStorage.getItem('Products')));
+
+// Display/Write the content of the variable "Information" on the document and make sure the images are displayed
+
+document.write(localStorage.getItem('Products')) 
+
+// HOMEWORK
+
+// 1. HIGH-ORDER FUNCTIONS
+// 2. REST OPERATOR
+// 3. GETTERS / SETTERS 
+// 4. TRY / CATCH -> MORE IN-DEPTH
+// 5. USAGE OF THE 'THIS.' KEYWORD
+// 6. ARRAY FILTERING / MAPPING
+
+// CRUD APP 
