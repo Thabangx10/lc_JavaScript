@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Exercises</title>
+</head>
+<style>
+
+  table{
+    margin: auto ;
+  }
+  img{
+    width: 50%;
+    height: 50%;
+  }
+</style>
+<body>
+    <!-- Description -->
+    <p>
+        1. Variable:<br><br> It is a container of values which can be stored in various ways to hold our data.<br><br>
+        2. Value <br><br> It is information stored in an variable/ array. They can be found in objects as attributes to their respective keys. <br><br>
+        3. Data type <br><br> Is self explanatory, but in my understanding, its describes what type of data is being held e.g string, number etc <br><br>
+        4. Initialization <br><br> It is when we assign our variable name with a variable name e.g let fullName = 'Thabang Kganana'<br><br>
+        5. Tell me the difference between let, var, and const. <br><br><strong>LET</strong> = if you don't want it, let is the keyword for you.<br><br><strong>VAR</strong> = If you want to reassign values: and you want the hoisting behavior, var is the keyword to use.<br><br><strong>CONST</strong> = If you never want a variable to change, const is the keyword to use.<br><br>
+        6. What is a variable scope? <br><br> We have <strong>Global variables</strong> which can be called anywhere in our JS code and <strong>Local variable</strong> can only be called within the function where it has been defined. <br><br>
+        7. When can you decide when to use a for or while, forEach and do while loop? <br><br><strong>FOR</strong> = to iterate through an array and loop over a number of times. <br><br><strong>WHILE</strong> = when working with user input and icrementing until something is not true. <br><br>
+        8. Define hoisting and variable scoping? <br><br> No matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
+    </p>
+    <br><br><br>
+    <!-- <form action="">Number1
+        <input type="button" value="Number">
+    </form> -->
+
+    <form id="calculatorForm">
+        <label for="number1">Number 1:</label>
+        <input type="number" id="number1" required>
+        
+        <label for="number2">Number 2:</label>
+        <input type="number" id="number2" required>
+        
+        <label for="operator">Operator:</label>
+        <select id="operator" required>
+          <option value="+">Addition (+)</option>
+          <option value="-">Subtraction (-)</option>
+          <option value="*">Multiplication (*)</option>
+          <option value="/">Division (/)</option>
+        </select>
+        
+        <div class="buttons">
+          <button type="button" onclick="calculate()">Display</button>
+          <button type="button" onclick="clearForm()">Clear</button>
+        </div>
+    </form>
+
+    <div class="result" id="result"></div>
+    <br><br><br>
+    <h3>
+      29 of May, 2023
+    </h3>
+    <section>
+      <p>
+        Question 4
+        <ul>
+          <ul>Create a string variable named subject that will have a value of “programming”</ul><br>
+          <ul>Display it on the console in his manner: gnimmargorp</ul><br>
+          <ul>Create a pull request to merge the main branch with q4.</ul><br>
+          <ul>Delete q4 on the remote repository, and finally, please checkout to the main branch and run the git pull.
+            This will update your current local repository with the latest changes.</ul>
+        </ul>
+      </p>
+    </section>
+    <br><br><br>
+    <h3>
+      29 of May, 2023
+    </h3>
+    <section>
+      <p>
+        Question 5
+        <ul>
+          <ul>Please create a branch called q5. Initialize a variable as an array of objects with people's names and dates of birth, such as name: Mish-AI, dob: ‘2020-05-31’.</ul><br>
+          <ul>Display Mish’s age is , and how many days left until his birthday</ul><br>
+          <ul>Create a pull request to merge the main branch with q5.</ul><br>
+          <ul>Delete q5 on the remote repository, and finally, please checkout to the main branch and run the git pull.
+            This will update your current local repository with the latest changes.</ul>
+        </ul>
+      </p>
+    </section>
+    <section>
+      <div class="row">
+        <div class="container" id="detail">
+
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+    <h3>
+      31 of May, 2023
+    </h3>
+    <section>
+      <p>
+        Create a table with the following headings:
+        <ul>
+          <ul>Name, Price, Img, Add Button, Delete Button</ul><br>
+          <ul>Append element to the td tags through js.</ul><br>
+          <ul>Give the element unique IDs and create an array containing the name, price and img.</ul><br>
+        </ul>
+      </p>
+    </section>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Image</th>
+          <th>Total</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="body">
+        <!-- We are going to add our dynamically added content here by targeting the elements I.D -->
+      </tbody>
+    </table>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+
+
+    <script src="./script/code.js"></script>
+
+</body>
+</html>

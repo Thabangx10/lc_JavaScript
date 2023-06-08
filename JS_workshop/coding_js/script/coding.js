@@ -17,5 +17,129 @@ numberVar = 5;
                                                 ->  25 
 */
 
-const Name = 'Thabang';
-const Name = 'Thabang';
+// const Name = 'Thabang';
+// const Name = 'Thabang';
+
+// Exercise:
+
+// 1 -> Build 5 constructive functions named 'person'
+
+function person(name, surname, age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+};
+
+let person1 = new person('Thabang', 'Kganana', 24);
+console.log(person1);
+
+let person2 = new person('Joe', 'Frazier', 44);
+console.log(person2);
+
+let person3 = new person('Lionel', 'Messi', 34);
+console.log(person3);
+
+let person4 = new person('Siya', 'Jhonga', 20);
+console.log(person4);
+
+let person5 = new person('Jordan', 'Kravitz', 29);
+console.log(person5);
+
+
+// 2 -> Add each object to the 'people' array
+
+let people = []
+// people.push({person1, person2, person3, person4, person5});
+people.splice(0,0,person1, person2, person3, person4, person5)
+console.log(people);
+
+
+// 3 -> Add array to the localStorage
+
+
+localStorage.setItem('people', JSON.stringify(people));
+
+
+// 4 -> Get items from localStorage to display persons with an age more than 30
+
+JSON.parse(localStorage.getItem('people'))
+
+
+// Async, fecth and then functions
+
+async function getAPI() {
+   try {
+    let API = await fetch('https://api.publicapis.org/entries');
+    let data = await API.json()
+    console.log(data)
+   } catch (error) {
+    console.log(error);
+    return
+   }
+}
+
+console.log(getAPI());
+
+// try{
+//     fetch('https://api.publicapis.org/entries').then(response => response.json()).then(data=>{console.log(data);})
+// }
+// catch (err){
+//     console.log(err);
+// }
+
+//  DATE -> 07 JUNE 2023, WEDNESDAY
+
+// Create an array of Objects (At least 3 Objects). Each object should have a URL Link to an image.
+
+
+let products = [
+    {
+        productID: 01,
+        productName: 'Manchester United Mens shirt',
+        productPrice: 2000,
+        images: document.createElement("img").src="https://i.postimg.cc/2ypSdcxF/download-1.jpg",
+    
+        // productDescription: '',
+    },
+
+    {
+        productID: 02,
+        productName: 'Barcelona Mens shirt',
+        productPrice: 1800,
+        // productDescription: '',
+    },
+
+    {
+        productID: 03,
+        productName: 'Chelsea Mens Football Club shirt',
+        productPrice: 1500,
+        productDescription: 'https://i.postimg.cc/2ypSdcxF/download-1.jpg',
+    }
+]
+
+
+// Set your array in localStorage.
+
+let Details = localStorage.setItem('Products', JSON.stringify(products));
+console.log(Details);
+
+// Get your array from localStorage and store it in a variable called "Information"
+
+// JSON.parse(localStorage.getItem('Products'))
+
+console.log(JSON.parse(localStorage.getItem('Products')));
+
+// Display/Write the content of the variable "Information" on the document and make sure the images are displayed
+
+document.write(localStorage.getItem('Products')) 
+
+// HOMEWORK
+
+// 1. HIGH-ORDER FUNCTIONS
+// 2. REST OPERATOR
+// 3. GETTERS / SETTERS 
+// 4. TRY / CATCH -> MORE IN-DEPTH
+// 5. USAGE OF THE 'THIS.' KEYWORD
+// 6. ARRAY FILTERING / MAPPING
+
+// CRUD APP 
