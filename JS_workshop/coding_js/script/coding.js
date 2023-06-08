@@ -136,10 +136,77 @@ document.write(localStorage.getItem('Products'))
 // HOMEWORK
 
 // 1. HIGH-ORDER FUNCTIONS
+
+// Higher order functions are functions that operate on other
+// functions, either by taking them as arguments or by returning
+// them.
+
+// In simple words, A Higher-Order function is a function that
+// receives a function as an argument or returns the function as
+// output.
+
+// Example ->
+
+
 // 2. REST OPERATOR
+
+// The three dots (...) in the snippet above symbolize the rest operator.
+
+// The text after the rest operator references the values you wish to encase inside an array. You can only use it before the last parameter in a function definition.
+
+// Example -> 
+
+// Define a function with two regular parameters and one rest parameter:
+function myBio(firstName, lastName, ...otherInfo) { 
+    return otherInfo;
+  }
+  
+  // Invoke myBio function while passing five arguments to its parameters:
+  myBio("Oluwatobi", "Sofela", "CodeSweetly", "Web Developer", "Male");
+  
+  // The invocation above will return:
+  ["CodeSweetly", "Web Developer", "Male"]
+
 // 3. GETTERS / SETTERS 
+
+// Data Quality
+// JavaScript can secure better data quality when using getters and setter
+
+// Example -> access fullName as a property: person.fullName.
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    get fullName() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+
 // 4. TRY / CATCH -> MORE IN-DEPTH
 // 5. USAGE OF THE 'THIS.' KEYWORD
+
 // 6. ARRAY FILTERING / MAPPING
+
+//  map() takes a maximum of three arguments, which are value/element, index, and array.
+
+let arrOne = [32, 45, 63, 36, 24, 11]
+
+// arrOne.map(value/element, index, array)
+
+const multFive = (num) => {
+return num * 5; //'num' here, is the value of the array.
+}
+let arrTwo = arrOne.map(multFive)
+console.log(arrTwo)
+
+// filter() Method
+
+// The name kind of gives it away, doesn't it? You use this method to filter the array based on conditions you provide. The filter() method also creates a new array.
+
+let arrNum = [15, 39, 20, 32, 30, 45, 22]
+function divByFive(num) {
+  return num % 3 == 0
+}
+let arrNewNum = arrNum.filter(divByFive)
+console.log(arrNewNum)
 
 // CRUD APP 
